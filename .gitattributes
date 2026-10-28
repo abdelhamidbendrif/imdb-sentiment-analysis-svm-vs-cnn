@@ -1,0 +1,9 @@
+# Preserve model files and presentation exports exactly across platforms.
+* text=auto
+*.pdf binary
+*.pptx binary
+*.keras binary
+*.joblib binary
+*.png binary
+*.jpg binary
+*.jpeg binary
