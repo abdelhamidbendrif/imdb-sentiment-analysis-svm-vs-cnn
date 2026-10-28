@@ -1,0 +1,38 @@
+{
+  "python_version": "3.13.15",
+  "packages": {
+    "scikit-learn": "1.6.1",
+    "numpy": "2.1.3",
+    "joblib": "1.6.0",
+    "nltk": "3.9.1",
+    "keras": "3.13.2",
+    "tensorflow": "2.20.0"
+  },
+  "cnn_threshold": 0.5,
+  "cnn_selection": "minimum validation loss; best_cnn.keras",
+  "preprocessing": "HTML cleaning, lowercase, negation expansion, regex tokens, POS-aware WordNet lemmatization",
+  "labels": {
+    "0": "Negative",
+    "1": "Positive"
+  },
+  "test_metrics": [
+    {
+      "Model": "TF-IDF + SVM",
+      "Accuracy": 0.908632513110125,
+      "Precision (macro)": 0.9089427219862003,
+      "Recall (macro)": 0.9085837119387635,
+      "F1 (macro)": 0.9086069003402866,
+      "ROC-AUC": 0.9682246442844682
+    },
+    {
+      "Model": "GloVe + CNN",
+      "Accuracy": 0.8711173860427591,
+      "Precision (macro)": 0.8711391729382654,
+      "Recall (macro)": 0.8711032388663967,
+      "F1 (macro)": 0.871110963026482,
+      "ROC-AUC": 0.9425690276891834
+    }
+  ],
+  "test_size": 4958,
+  "test_metrics_source": "Exported models evaluated on the unchanged CSV test split; metrics match the executed notebook at four decimals."
+}

@@ -1,0 +1,19 @@
+# Local environment, resources, and recovery archive.
+.venv/
+.local_archive/
+nltk_data/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.chart-data-*/
+
+# Credentials and local leftovers.
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
+*.log
+
+# Trained models and metadata are intentionally included.

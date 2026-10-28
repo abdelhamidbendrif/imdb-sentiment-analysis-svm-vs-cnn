@@ -1,0 +1,82 @@
+{
+  "backend": "numpy CPU inference from the original Keras archive",
+  "reference_predictions_checked": 4,
+  "references": [
+    {
+      "review": "The acting was excellent and I enjoyed every minute.",
+      "svm_label": "Positive",
+      "cnn_label": "Positive",
+      "svm_score_error": 0.0,
+      "cnn_score_error": 4.582277601805629e-08
+    },
+    {
+      "review": "The movie was boring and I would not recommend it.",
+      "svm_label": "Negative",
+      "cnn_label": "Negative",
+      "svm_score_error": 0.0,
+      "cnn_score_error": 7.378032932520151e-08
+    },
+    {
+      "review": "The film was decent, but I didn\u2019t like the way it ended; I believe there should have been a different, more logical conclusion.",
+      "svm_label": "Positive",
+      "cnn_label": "Negative",
+      "svm_score_error": 0.0,
+      "cnn_score_error": 1.7381673383942697e-07
+    },
+    {
+      "review": "The actors were watching movies, but I didn't enjoy them.",
+      "svm_label": "Negative",
+      "cnn_label": "Positive",
+      "svm_score_error": 0.0,
+      "cnn_score_error": 1.740096151614523e-07
+    }
+  ],
+  "test_reviews_checked": 4958,
+  "test_metrics": [
+    {
+      "Model": "TF-IDF + SVM",
+      "Accuracy": 0.908632513110125,
+      "Precision (macro)": 0.9089427219862003,
+      "Recall (macro)": 0.9085837119387635,
+      "F1 (macro)": 0.9086069003402866,
+      "ROC-AUC": 0.9682246442844682
+    },
+    {
+      "Model": "GloVe + CNN",
+      "Accuracy": 0.8711173860427591,
+      "Precision (macro)": 0.8711391729382654,
+      "Recall (macro)": 0.8711032388663967,
+      "F1 (macro)": 0.871110963026482,
+      "ROC-AUC": 0.9425690276891834
+    }
+  ],
+  "confusion_matrices": {
+    "TF-IDF + SVM": [
+      [
+        2211,
+        259
+      ],
+      [
+        194,
+        2294
+      ]
+    ],
+    "GloVe + CNN": [
+      [
+        2142,
+        328
+      ],
+      [
+        311,
+        2177
+      ]
+    ]
+  },
+  "cnn_test_inference_seconds": 206.6028110999905,
+  "executed_notebook_metrics_match": true,
+  "model_sha256": {
+    "tfidf_vectorizer.joblib": "8392b08097e813ab8ceacc220fb77483ad974abbe5b9accf58a7b4cf395dcadd",
+    "svm_model.joblib": "6346a43b70bb9cefc539fa01dc059f3f4a611bcfb4b5f6c41a2648586bd7b83b",
+    "cnn_with_vectorizer.keras": "3e499429ca0ede8a574c57787526f28c051d37dfbe6ab2050e3acf400154b9b6"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "review": "The acting was excellent and I enjoyed every minute.",
+    "processed": "the acting be excellent and i enjoy every minute",
+    "svm_label": "Positive",
+    "svm_score": 1.559313533843131,
+    "cnn_label": "Positive",
+    "cnn_score": 0.9994031190872192
+  },
+  {
+    "review": "The movie was boring and I would not recommend it.",
+    "processed": "the movie be boring and i would not recommend it",
+    "svm_label": "Negative",
+    "svm_score": -2.884726879215976,
+    "cnn_label": "Negative",
+    "cnn_score": 0.034079257398843765
+  },
+  {
+    "review": "The film was decent, but I didn’t like the way it ended; I believe there should have been a different, more logical conclusion.",
+    "processed": "the film be decent but i do not like the way it end i believe there should have be a different more logical conclusion",
+    "svm_label": "Positive",
+    "svm_score": 0.1538233193908003,
+    "cnn_label": "Negative",
+    "cnn_score": 0.40541747212409973
+  },
+  {
+    "review": "The actors were watching movies, but I didn't enjoy them.",
+    "processed": "the actor be watch movie but i do not enjoy them",
+    "svm_label": "Negative",
+    "svm_score": -0.5455379784430132,
+    "cnn_label": "Positive",
+    "cnn_score": 0.600165843963623
+  }
+]
